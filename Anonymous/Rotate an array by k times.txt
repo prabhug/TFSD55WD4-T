@@ -1,0 +1,8 @@
+let newarray1 = [1,2,3,4,5,6,7,8,9];
+let rotate = function(newarray1,ele){
+    for(let i=0;i<=ele;i++){
+     newarray1.push(newarray1.shift());
+    }
+    return newarray1;
+}
+console.log(rotate(newarray1,4));

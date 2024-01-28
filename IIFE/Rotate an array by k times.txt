@@ -1,0 +1,7 @@
+let newarray1 = [1,2,3,4,5,6,7,8,9];
+(function(newarray1,ele){
+    for(let i=0;i<=ele;i++){
+     newarray1.push(newarray1.shift());
+    }
+    console.log(newarray1);
+}(newarray1,4));

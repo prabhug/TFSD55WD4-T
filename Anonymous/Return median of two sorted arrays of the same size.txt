@@ -1,0 +1,14 @@
+let array1 = [1,2,3,98,4,5,6,7,8,9];
+let array2 = [21,23,45,67];
+let array3=[];
+let median = function(array1,array2){
+array3 = array1.concat(array2).sort(function(a,b){return a-b;});
+
+let ele = array3.length;
+if(array3.length %2 == 0){
+    return (array3[(ele/2)] + array3[(ele/2-1)])/2;
+}
+return array3[Math.floor(ele/2)];
+}
+
+console.log(median(array1,array2));

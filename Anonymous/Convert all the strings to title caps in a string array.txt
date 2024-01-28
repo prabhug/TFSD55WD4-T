@@ -1,0 +1,6 @@
+let array1 = ["aaaaaa","bbbbbb","cccccc","dddddd"];
+let out = function(ele){
+for(let i of ele){
+ console.log(i.charAt(0).toUpperCase() + i.slice(1));
+}}
+out(array1);

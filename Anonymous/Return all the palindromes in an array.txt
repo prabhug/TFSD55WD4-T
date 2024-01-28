@@ -1,0 +1,5 @@
+let inputarray = ["sir","madam","test","dad","nitin"];
+let outarray = function(inputarray){
+return inputarray.filter(ele => (ele.split("").reverse().join("") == ele ));
+}
+console.log(outarray(inputarray));
